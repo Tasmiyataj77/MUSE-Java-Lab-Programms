@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+public class arithmeticoperations {
+    public static void main(String[] args) {
+        Scanner ob=new Scanner(System.in);
+        char oper;
+        double a,b,result;
+        System.out.print("Enter which operation you want to perform: ");
+        oper=ob.next().charAt(0);
+        System.out.print("Enter first number: ");
+        a=ob.nextDouble();
+        System.out.print("Enter second number: ");
+        b=ob.nextDouble();
+        switch(oper){
+            case'+':
+                result=a+b;
+                System.out.print("the result of addition is: "+result);
+                break;
+            case'-':
+                result=a-b;
+                System.out.print("the result of substraction is: "+result);
+                break;
+            case'*':
+                result=a*b;
+                System.out.print("the result of multiplication is: "+result);
+                break;
+            case'/':
+                result=a/b;
+                System.out.print("the result of division is: "+result);
+                break;
+            default:
+                System.out.print("Invalid input");
+        }
+    }
+}
